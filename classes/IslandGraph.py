@@ -1,4 +1,4 @@
-class Graph:
+class IslandGraph:
     def __init__(self):
         self.islands = {}
 
