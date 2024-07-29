@@ -3,6 +3,11 @@ from classes.IslandGraph import IslandGraph
 from classes.Tourism import Tourism
 from classes.ResourcePlanting import ResourcePlanting
 
+def task3Main():
+    # Initialize resource planting algorithm
+    distribution = ResourcePlanting(graph=graph, resource="kahelelani shells", source_island="B")
+    distribution.plant()
+
 def task4Main():
     # Create islands
     island_a = Island(name="A", population=100, resources={"food": 50, "water": 100}, )
@@ -26,12 +31,9 @@ def task4Main():
 
     print(f"Visited islands: {visited_islands}")
     print(f"Total travel time: {total_time}")
-
-    # Initialize resource planting algorithm
-    distribution = ResourcePlanting(graph=graph, resource="kahelelani shells", source_island="B")
-    distribution.plant()
-
+    
 def main():
+    task3Main()
     task4Main()
     
 main()
